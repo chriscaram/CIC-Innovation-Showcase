@@ -1,0 +1,53 @@
+.all-cards{
+    margin: 50px 0;
+}
+
+.bottom-hr{
+    margin-top: 40px;
+}
+
+.carousel{
+    background-color: white;
+}
+
+.carousel-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.card-img{
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* styles.css */
+.custom-tabs{
+    margin: 50px 0;
+}
+.custom-tabs .nav-link {
+    color: black; 
+    /* background-color: #007bff; 
+    border-color: #007bff;  */
+  }
+
+.modal-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-button{
+margin-right: 10px;
+}
+
+.search-field{
+    padding-top: 20px;
+}
+
+
+.view-info-button:hover{
+    color: #047D95;
+}

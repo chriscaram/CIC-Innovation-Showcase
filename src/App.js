@@ -1,24 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import "./App.css";
+import {
+  Home,
+  AboutUs,
+  Contact,
+} from "../src/pages/index";
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+        <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/About' exact element={<AboutUs />} />
+        <Route path='/Contact' exact element={<Contact />} />
+        </Routes>
+        </BrowserRouter>
+      {/* <div className="container">
+        <NoteUICollection
+          overrideItems={({ item, idx }) => {
+            return {
+              overrides: {
+                Vector31472745: {
+                  onClick: () => {
+                    setShowUpdateModal(true);
+                    setUpdateNote(item);
+                  },
+                },
+              },
+            };
+          }}
+        />
+      </div>
+      <div
+        className="modal"
+        style={{ display: showCreateModal === false && "none" }}
+      >
+        <CreateNote
+          overrides={{
+            MyIcon: { as: "button", onClick: () => setShowCreateModal(false) },
+          }}
+        />
+      </div>
+      <div
+        className="modal"
+        style={{ display: showUpdateModal === false && "none" }}
+      >
+        <UpdateNote
+          note={updateNote}
+          overrides={{
+            MyIcon: {
+              as: "button",
+              onClick: () => setShowUpdateModal(false),
+            },
+          }}
+        />
+      </div> */}
+    </>
   );
 }
 

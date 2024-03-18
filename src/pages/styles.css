@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.about-section{
+    height: 50vh;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.5)), url("https://smartchallenges.asu.edu/sites/default/files/2023-11/IMG_6669.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.5)), url("https://smartchallenges.asu.edu/sites/default/files/2023-11/IMG_6669.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#scrollToCategories:hover{
+  fill: #047D95;
+}
+
+.top-section{
+  min-height: 85vh;
+}
+.contact-section{
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.contact-page {
+  height: 100vh;
+}
+
+.section-row{
+    height: 50vh;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+}
+  
+  .text-overlay {
+    font-size: 3rem; /* Adjust the font size as needed */
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
