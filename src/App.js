@@ -17,6 +17,46 @@ function App() {
         <Route path='/contact' exact element={<Contact />} />
         </Routes>
         </BrowserRouter>
+      {/* <div className="container">
+        <NoteUICollection
+          overrideItems={({ item, idx }) => {
+            return {
+              overrides: {
+                Vector31472745: {
+                  onClick: () => {
+                    setShowUpdateModal(true);
+                    setUpdateNote(item);
+                  },
+                },
+              },
+            };
+          }}
+        />
+      </div>
+      <div
+        className="modal"
+        style={{ display: showCreateModal === false && "none" }}
+      >
+        <CreateNote
+          overrides={{
+            MyIcon: { as: "button", onClick: () => setShowCreateModal(false) },
+          }}
+        />
+      </div>
+      <div
+        className="modal"
+        style={{ display: showUpdateModal === false && "none" }}
+      >
+        <UpdateNote
+          note={updateNote}
+          overrides={{
+            MyIcon: {
+              as: "button",
+              onClick: () => setShowUpdateModal(false),
+            },
+          }}
+        />
+      </div> */}
     </>
   );
 }

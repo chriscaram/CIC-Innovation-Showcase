@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Leftframe,
   MarketingFooterBrand,
@@ -18,7 +19,8 @@ const client = generateClient();
 
 
 const Home = () => {
-  const [info, setInfo] = useState()
+  const [info, setInfo] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -42,6 +44,9 @@ const Home = () => {
     <div>
       <NavBarHeader2
         width="100%"
+        overrides={{
+          Button7873: { as: "button", onClick: () =>  navigate("/about")},
+          }}
       />
       <Container className="top-section">
         <Row className="justify-content-md-center">
