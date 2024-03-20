@@ -15,11 +15,11 @@ export default function NavBarHeader2(props) {
     useNavigateAction({ type: "url", url: "/" });
   const buttonSevenEightSevenThreeOnClick = useNavigateAction({
     type: "url",
-    url: "/About",
+    url: "/about",
   });
   const buttonSevenEightEightNineOnClick = useNavigateAction({
     type: "url",
-    url: "/Contact",
+    url: "/contact",
   });
   return (
     <Flex

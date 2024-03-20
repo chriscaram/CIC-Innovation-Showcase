@@ -59,10 +59,13 @@ function Cards({ challengesInfo }) {
 
   return (
     <>
-      <Container className="all-cards">
+      <Container className="all-cards" >
         <Row xs={1} md={3} className="g-4">
           {challengesInfo.map((challenge, index) => (
-            <Col key={index}>
+            <Col key={index} onClick={() => {
+                    setSelectedProject(challenge);
+                    setModalShow(true);
+                  }}>
               <Card border="dark">
                 <Card.Header>{challenge.Category}</Card.Header>
                 <Card.Body>
@@ -72,12 +75,6 @@ function Cards({ challengesInfo }) {
                     <small>{challenge.ShortInfo.length > 100 ? challenge.ShortInfo.slice(0, 100) + '...' : challenge.ShortInfo}</small>
                   </Card.Text>
                 </Card.Body>
-                <Card.Footer onClick={() => {
-                    setSelectedProject(challenge);
-                    setModalShow(true);
-                  }}>
-                  <small className="view-info-button">View more information</small>
-                </Card.Footer>
               </Card>
             </Col>
           ))}

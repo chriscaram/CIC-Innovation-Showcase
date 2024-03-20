@@ -33,6 +33,10 @@ const Home = () => {
     fetchUsers();
   }, []);
 
+  function ShowProjects(){
+    const element = document.getElementById("categories");
+    element.scrollIntoView({ block: "start" });
+  }
 
   return (
     <div>
@@ -52,6 +56,7 @@ const Home = () => {
           </Row>
           {/* This is the arrows icon */}
           <svg
+            onClick={ShowProjects}
             id="scrollToCategories"
             xmlns="http://www.w3.org/2000/svg"
             width="100"

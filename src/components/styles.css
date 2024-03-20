@@ -14,8 +14,8 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
 }
+
 
 .card-img{
     height: 200px;
