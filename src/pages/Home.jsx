@@ -46,6 +46,7 @@ const Home = () => {
         width="100%"
         overrides={{
           Button7873: { as: "button", onClick: () =>  navigate("/about")},
+          Button7889: { as: "button", onClick: () =>  navigate("/contact")},
           }}
       />
       <Container className="top-section">

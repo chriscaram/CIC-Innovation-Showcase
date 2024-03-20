@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
 AboutCIC,
   MarketingFooterBrand,
@@ -11,14 +12,16 @@ import './styles.css'; // Import your CSS file
 
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <div>
     <NavBarHeader2
-    width="100%"
-    // overrides={{
-    //   Button31632483: { onClick: () => setShowCreateModal(true) },
-    // }}
-  />
+        width="100%"
+        overrides={{
+          Button7873: { as: "button", onClick: () =>  navigate("/about")},
+          Button7889: { as: "button", onClick: () =>  navigate("/contact")},
+          }}
+      />
   <Container className="about-section" fluid="true">
       <Row className="section-row">
           <h1 className="text-overlay">ABOUT US</h1>
