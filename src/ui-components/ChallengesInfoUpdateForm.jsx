@@ -45,6 +45,7 @@ export default function ChallengesInfoUpdateForm(props) {
     ProjectName_es: "",
     Category_es: "",
     approach_es: "",
+    AIBackgroundImage: "",
   };
   const [ProjectName, setProjectName] = React.useState(
     initialValues.ProjectName
@@ -72,6 +73,9 @@ export default function ChallengesInfoUpdateForm(props) {
   const [approach_es, setApproach_es] = React.useState(
     initialValues.approach_es
   );
+  const [AIBackgroundImage, setAIBackgroundImage] = React.useState(
+    initialValues.AIBackgroundImage
+  );
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     const cleanValues = challengesInfoRecord
@@ -91,6 +95,7 @@ export default function ChallengesInfoUpdateForm(props) {
     setProjectName_es(cleanValues.ProjectName_es);
     setCategory_es(cleanValues.Category_es);
     setApproach_es(cleanValues.approach_es);
+    setAIBackgroundImage(cleanValues.AIBackgroundImage);
     setErrors({});
   };
   const [challengesInfoRecord, setChallengesInfoRecord] = React.useState(
@@ -126,6 +131,7 @@ export default function ChallengesInfoUpdateForm(props) {
     ProjectName_es: [],
     Category_es: [],
     approach_es: [],
+    AIBackgroundImage: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -167,6 +173,7 @@ export default function ChallengesInfoUpdateForm(props) {
           ProjectName_es: ProjectName_es ?? null,
           Category_es: Category_es ?? null,
           approach_es: approach_es ?? null,
+          AIBackgroundImage: AIBackgroundImage ?? null,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -241,6 +248,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.ProjectName ?? value;
@@ -278,6 +286,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.ShortInfo ?? value;
@@ -315,6 +324,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.Category ?? value;
@@ -352,6 +362,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.Customer ?? value;
@@ -389,6 +400,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.AWSServices ?? value;
@@ -426,6 +438,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.ProjectPic ?? value;
@@ -463,6 +476,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.ProjectInfoURL ?? value;
@@ -500,6 +514,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.Highlight ?? value;
@@ -537,6 +552,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.Demo ?? value;
@@ -574,6 +590,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.github ?? value;
@@ -611,6 +628,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.approach ?? value;
@@ -648,6 +666,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es: value,
               Category_es,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.ProjectName_es ?? value;
@@ -685,6 +704,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es: value,
               approach_es,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.Category_es ?? value;
@@ -722,6 +742,7 @@ export default function ChallengesInfoUpdateForm(props) {
               ProjectName_es,
               Category_es,
               approach_es: value,
+              AIBackgroundImage,
             };
             const result = onChange(modelFields);
             value = result?.approach_es ?? value;
@@ -735,6 +756,46 @@ export default function ChallengesInfoUpdateForm(props) {
         errorMessage={errors.approach_es?.errorMessage}
         hasError={errors.approach_es?.hasError}
         {...getOverrideProps(overrides, "approach_es")}
+      ></TextField>
+      <TextField
+        label="Ai background image"
+        isRequired={false}
+        isReadOnly={false}
+        value={AIBackgroundImage}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              ProjectName,
+              ShortInfo,
+              Category,
+              Customer,
+              AWSServices,
+              ProjectPic,
+              ProjectInfoURL,
+              Highlight,
+              Demo,
+              github,
+              approach,
+              ProjectName_es,
+              Category_es,
+              approach_es,
+              AIBackgroundImage: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.AIBackgroundImage ?? value;
+          }
+          if (errors.AIBackgroundImage?.hasError) {
+            runValidationTasks("AIBackgroundImage", value);
+          }
+          setAIBackgroundImage(value);
+        }}
+        onBlur={() =>
+          runValidationTasks("AIBackgroundImage", AIBackgroundImage)
+        }
+        errorMessage={errors.AIBackgroundImage?.errorMessage}
+        hasError={errors.AIBackgroundImage?.hasError}
+        {...getOverrideProps(overrides, "AIBackgroundImage")}
       ></TextField>
       <Flex
         justifyContent="space-between"

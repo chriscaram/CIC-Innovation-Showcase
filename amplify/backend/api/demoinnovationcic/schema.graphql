@@ -14,4 +14,6 @@ type ChallengesInfo @model @auth(rules: [{allow: public}]) {
   ProjectName_es: String
   Category_es: String
   approach_es: String
-} 
+  AIBackgroundImage: String
+}
+ 

@@ -34,6 +34,10 @@ return (
     className="mb-3 custom-tabs"
     justify
   >
+      <Tab eventKey='featured' title="Featured">
+        {/* Filter projects by category and pass them to the Cards component */}
+        <Cards challengesInfo={challengesInfo.filter(project => project.Highlight === true)} />
+      </Tab>
     <Tab eventKey='all' title="All Projects">
     <Row className="justify-content-md-center">
     <Col className="search-field "md={5}>

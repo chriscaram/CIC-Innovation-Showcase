@@ -36,6 +36,7 @@ export declare type ChallengesInfoCreateFormInputValues = {
     ProjectName_es?: string;
     Category_es?: string;
     approach_es?: string;
+    AIBackgroundImage?: string;
 };
 export declare type ChallengesInfoCreateFormValidationValues = {
     ProjectName?: ValidationFunction<string>;
@@ -52,6 +53,7 @@ export declare type ChallengesInfoCreateFormValidationValues = {
     ProjectName_es?: ValidationFunction<string>;
     Category_es?: ValidationFunction<string>;
     approach_es?: ValidationFunction<string>;
+    AIBackgroundImage?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type ChallengesInfoCreateFormOverridesProps = {
@@ -70,6 +72,7 @@ export declare type ChallengesInfoCreateFormOverridesProps = {
     ProjectName_es?: PrimitiveOverrideProps<TextFieldProps>;
     Category_es?: PrimitiveOverrideProps<TextFieldProps>;
     approach_es?: PrimitiveOverrideProps<TextFieldProps>;
+    AIBackgroundImage?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type ChallengesInfoCreateFormProps = React.PropsWithChildren<{
     overrides?: ChallengesInfoCreateFormOverridesProps | undefined | null;

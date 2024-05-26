@@ -15,6 +15,7 @@ const DynamicCarousel = ({ challengesInfo }) => {
           <Carousel.Item key={index}>
           <Image src={challenge.ProjectPic} rounded className="carousel-image"></Image>
             {/* <ExampleCarouselImage text={challenge.ProjectName} /> */}
+            <div className="black-overlay"></div>
             <Carousel.Caption>
               <h3>{challenge.ProjectName}</h3>
               <p>{challenge.ShortInfo}</p>

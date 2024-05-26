@@ -27,7 +27,7 @@ const Home = () => {
       try {
         const challenges = await client.graphql({ query: queries.listChallengesInfos});
         setInfo(challenges.data.listChallengesInfos.items)
-        console.log(challenges.data.listChallengesInfos.items[0])
+        // console.log("My challenges Info",challenges.data.listChallengesInfos.items[0])
       } catch (error) {
         console.error('Error fetching data:', error);
       }

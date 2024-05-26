@@ -5,6 +5,8 @@ import {
   Home,
   AboutUs,
   Contact,
+  ProjectPage,
+  DemoSite,
 } from "../src/pages/index";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path='/' exact element={<Home />} />
         <Route path='/about' exact element={<AboutUs />} />
         <Route path='/contact' exact element={<Contact />} />
+        <Route path='/project' exact element={<ProjectPage />} />
+        <Route path='/demo' exact element={<DemoSite />} />
         </Routes>
         </BrowserRouter>
       {/* <div className="container">

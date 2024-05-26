@@ -21,6 +21,12 @@
       "api": {
         "demoinnovationcic": {},
         "getCategory": {}
+      },
+      "auth": {
+        "demoinnovationcic": {}
+      },
+      "storage": {
+        "s3demoinnovationcicimagestorage": {}
       }
     }
   }

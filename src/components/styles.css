@@ -6,6 +6,15 @@
     margin-top: 40px;
 }
 
+.black-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
 .carousel{
     background-color: white;
 }
@@ -47,6 +56,12 @@ margin-right: 10px;
     padding-top: 20px;
 }
 
+.contact-image {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
 
 .view-info-button:hover{
     color: #047D95;
