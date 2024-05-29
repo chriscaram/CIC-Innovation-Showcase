@@ -10,7 +10,7 @@ const ProjectPage = () => {
   const { projectName, projectInfo, pic, demo } = location.state || {};
 
   const handleBackClick = () => {
-    navigate('/demo');
+    navigate('/');
   };
 
   return (
