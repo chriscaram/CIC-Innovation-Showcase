@@ -22,11 +22,11 @@ const DynamicCarousel = ({ challengesInfo }) => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 3000,
   };
 
   return (
-   <Box width={"300px"}>
+   <Box width={"300px"} pt={3}>
       <Slider {...settings}>
         {highlightedChallenges.map((challenge) => (
           <Card
@@ -42,13 +42,13 @@ const DynamicCarousel = ({ challengesInfo }) => {
               alt="Card"
               style={{
                 width: "100%",
-                padding: "16px 16px 0px 16px", // Add padding
-                borderRadius: "20px", // Add rounded corners
+                padding: "16px 16px 0px 16px", 
+                borderRadius: "20px", 
               }}
             />
             <CardContent>
               <Typography variant="h6">{challenge.ProjectName}</Typography>
-              <Typography variant="body2">{challenge.shortInfo}</Typography>
+              <Typography variant="body2">{challenge.ShortInfo}</Typography>
             </CardContent>
           </Card>
         ))}
