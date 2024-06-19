@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Box from '@mui/material/Box';
-import HomePageImage from './images/HomePageImage.jpg';
+import HomePageImage from './images/HomePageImage.png';
 import { generateClient } from 'aws-amplify/api';
 import * as queries from '../graphql/queries';
 // import Logo from './images/LogoCic.png';
@@ -12,12 +12,12 @@ import OverlayCarousel from '../components/OverlayCarousel';
 const client = generateClient();
 
 const positions = [
-  { top: '28%', left: '23%' },
-  { top: '23%', left: '59%' },
-  { top: '32%', left: '65%' },
-  { top: '42%', left: '57%' },
-  { top: '35%', left: '15%' },
-  { top: '43%', left: '30%' },
+  { top: '33%', left: '28%' },
+  { top: '30%', left: '57%' },
+  { top: '35%', left: '62%' },
+  { top: '46%', left: '57%' },
+  { top: '37%', left: '18%' },
+  { top: '45%', left: '34%' },
   { top: '52%', left: '73%' },
 ];
 
