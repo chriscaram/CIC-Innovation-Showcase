@@ -32,6 +32,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, pic, demo }) => {
           color: "white",
           border: "1px solid white",
           fontSize: "0.75rem",
+          fontWeight:"bold",
         }}
       />
       <img
