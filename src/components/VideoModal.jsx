@@ -7,7 +7,12 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const VideoModal = ({ open, handleClose, demo }) => {
   return (
-    <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
+    <Dialog
+    open={open}
+    onClose={handleClose}
+    maxWidth={false}
+    sx={{ "& .MuiDialog-paper": { width: "75%", maxWidth: "none" } }}
+  >
       <DialogTitle
         sx={{
           backgroundColor: "rgba(148, 121, 255, 0.9)",

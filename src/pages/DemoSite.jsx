@@ -67,7 +67,8 @@ const DemoSite = () => {
         height: '100vh',
       }}
     >
-      {showOverlay && <OverlayCarousel info={info} onClose={handleCloseOverlay} />}
+    {/* Uncomment this if you want to show the overlay */}
+      {/* {showOverlay && <OverlayCarousel info={info} onClose={handleCloseOverlay} />} */}
 
       <img
         src={Logo}
@@ -94,8 +95,8 @@ const DemoSite = () => {
           }}
         />
       ))}
-
-      <img
+      {/* Uncomment this if you want the aws logo at the bottom right */}
+      {/* <img
         src={aws}
         alt="aws logo"
         style={{
@@ -106,7 +107,7 @@ const DemoSite = () => {
           cursor: 'pointer', // Make the AWS logo clickable
         }}
         onClick={handleAWSLogoClick}
-      />
+      /> */}
     </Box>
   );
 };
