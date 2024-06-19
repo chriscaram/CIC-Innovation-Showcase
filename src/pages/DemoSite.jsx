@@ -75,8 +75,8 @@ const DemoSite = () => {
         alt="cic-ai logo"
         style={{
           position: 'absolute',
-          top: '20px',
-          left: '20px',
+          top: '50px',
+          left: '50px',
           width: "150px",
         }}
       />
