@@ -28,7 +28,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, pic, demo }) => {
       <Chip
         label={projectName}
         sx={{
-          backgroundColor: "#9479FF",
+          backgroundColor: "#9902A7",
           color: "white",
           border: "1px solid white",
           fontSize: "0.75rem",

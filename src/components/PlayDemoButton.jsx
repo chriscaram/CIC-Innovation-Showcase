@@ -10,7 +10,7 @@ const AnimatedButton = styled(Button)(({ theme }) => ({
   overflow: 'hidden',
   padding: theme.spacing(1, 2),
   backgroundColor: 'white',
-  color: '#9479FF',
+  color: '#6B4E79',
   borderRadius: '35px', // Increase the corner radius
   '& .icon': {
     fontSize: '2.5rem', // Increase icon size
