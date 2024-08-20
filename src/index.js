@@ -9,17 +9,14 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 
 import "@aws-amplify/ui-react/styles.css";
-import { studioTheme } from "./ui-components";
 
 Amplify.configure(awsconfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider theme={studioTheme}>
     <div style={{ backgroundColor: '#F5F5F5' }}>
     <App />
     </div>
-    </ThemeProvider>
     
 );
 
