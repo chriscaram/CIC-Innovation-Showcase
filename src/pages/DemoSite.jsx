@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Box from '@mui/material/Box';
-import HomePageImage from './images/HomePageImage.png';
+import HomePageImage from './images/home-innovation-nation.png';
 import { generateClient } from 'aws-amplify/api';
 import * as queries from '../graphql/queries';
 // import Logo from './images/LogoCic.png';
