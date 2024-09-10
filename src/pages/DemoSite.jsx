@@ -12,8 +12,8 @@ import OverlayCarousel from '../components/OverlayCarousel';
 const client = generateClient();
 
 const positions = [
-  { top: '33%', left: '28%' },
-  { top: '30%', left: '57%' },
+  { top: '43%', left: '28%' },
+  { top: '47%', left: '57%' },
   { top: '35%', left: '62%' },
   { top: '46%', left: '57%' },
   { top: '37%', left: '18%' },
