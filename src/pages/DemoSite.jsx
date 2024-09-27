@@ -64,6 +64,7 @@ const DemoSite = () => {
         backgroundImage: `url(${HomePageImage})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        backgroundColor: '#3C640F'
         height: '100vh',
       }}
     >
