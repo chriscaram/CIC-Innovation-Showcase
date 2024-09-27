@@ -34,4 +34,4 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectTextCard;
