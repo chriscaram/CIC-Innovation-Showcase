@@ -27,10 +27,12 @@ const ProjectPage = () => {
         projectName={projectName}
         projectInfo={projectInfo}
         demo={demo}
+        sx={{ mb: 6 }}
       />
       <ProjectTextCard
         cardTitle="Innovation"
         cardText={projectApproach}
+        sx={{ mb: 6 }}
       />
       <ProjectTextCard
         cardTitle="Outcomes"
