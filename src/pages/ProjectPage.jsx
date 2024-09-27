@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard'; // Ensure this import path is correct
+import ProjectTextCard from '../components/ProjectTextCard';
 import backArrow from './images/backArrow.png';
 
 const ProjectPage = () => {
@@ -27,15 +28,13 @@ const ProjectPage = () => {
         projectInfo={projectInfo}
         demo={demo}
       />
-      <ProjectCard
+      <ProjectTextCard
         projectName="Innovation"
         projectInfo={projectApproach}
-        demo={demo}
       />
-      <ProjectCard
-        projectName="Outcomes"
-        projectInfo={projectApproachES}
-        demo={demo}
+      <ProjectTextCard
+        cardTitle="Outcomes"
+        cardText={projectApproachES}
       />
       <img
         src={backArrow}
