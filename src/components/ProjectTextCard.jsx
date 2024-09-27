@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import { Typography } from "@mui/material";
+import { Box, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PlayDemoButton from "./PlayDemoButton";
 import VideoModal from "./VideoModal";
 
