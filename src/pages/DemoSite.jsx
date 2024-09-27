@@ -109,7 +109,9 @@ const DemoSite = () => {
         <ProjectInfo
           key={index}
           projectName={project.ProjectName}
-          projectInfo={project.approach}
+          projectInfo={project.ShortInfo}
+          projectApproach={project.approach}
+          projectApproachES={project.approach_es}
           pic={project.ProjectPic}
           demo={project.Demo}
           style={{
