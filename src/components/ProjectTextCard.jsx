@@ -23,9 +23,7 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
       sx={{ backgroundColor: "rgb(60, 100, 15, 0.9)" }}
       p={3}
     >
-      <Typography variant="h4" color={"white"} fontWeight={"bold"}>
-       {cardTitle}
-      </Typography>
+     
       
        <Accordion sx={{ mt: 2, backgroundColor: "transparent", boxShadow: "none" }}>
         <AccordionSummary
@@ -33,8 +31,8 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
           aria-controls="card-text-content"
           id="card-text-header"
         >
-          <Typography variant="body2" color={"white"}>
-            More Details
+          <Typography variant="h4" color={"white"} fontWeight={"bold"}>
+             {cardTitle}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
