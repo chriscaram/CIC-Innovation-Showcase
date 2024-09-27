@@ -6,7 +6,7 @@ import Highlight from "../pages/images/highlight.png";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 
-const ProjectInfo = ({ style , projectName, projectInfo, pic, demo }) => {
+const ProjectInfo = ({ style , projectName, projectInfo, projectApproach, projectApproachES, pic, demo }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const navigate = useNavigate();
 
