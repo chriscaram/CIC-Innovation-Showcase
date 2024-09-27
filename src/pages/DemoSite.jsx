@@ -83,22 +83,24 @@ const DemoSite = () => {
         }}
       />
 
-      <Typography variant="h5" align="left" color="white"  style={{
-         fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
+      <Typography variant="h4" align="left" style={{
+          color: 'rgba(245, 255, 255, 0.9)',
+          fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
           position: 'absolute',
           top: '170px',
           left: '50px',
-          width: "450px",
+          width: "550px",
         }}>
         Welcome to Innovation Nation!
       </Typography>
 
-      <Typography variant="body3" align="left" color="white"  style={{
-         fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
+      <Typography variant="h6" align="left" color="white"  style={{
+          color: 'rgba(240, 255, 255, 0.85)',
+          fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
           position: 'absolute',
           top: '240px',
           left: '50px',
-          width: "280px",
+          width: "350px",
         }}>
         Let’s explore a selection of prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world  Public Sector organization challenges, using AWS technical solutions.
       </Typography>
