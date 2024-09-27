@@ -15,7 +15,7 @@ const VideoModal = ({ open, handleClose, demo }) => {
   >
       <DialogTitle
         sx={{
-          backgroundColor: "rgba(148, 121, 255, 0.9)",
+          backgroundColor: "rgba(60, 100, 15, 0.9)",
           color: "white",
         }}
       >
@@ -31,7 +31,7 @@ const VideoModal = ({ open, handleClose, demo }) => {
       </DialogTitle>
       <DialogContent
         sx={{
-          backgroundColor: "rgba(148, 121, 255, 0.9)",
+          backgroundColor: "rgba(60, 100, 15, 0.9)",
         }}
       >
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
