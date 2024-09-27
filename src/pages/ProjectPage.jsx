@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard'; // Ensure this import path is correct
 import ProjectTextCard from '../components/ProjectTextCard';
@@ -27,13 +28,13 @@ const ProjectPage = () => {
         projectName={projectName}
         projectInfo={projectInfo}
         demo={demo}
-        sx={{ mb: "50px" }}
       />
+      <Divider sx={{ visibility: 'hidden', my: 2 }} />
       <ProjectTextCard
         cardTitle="Innovation"
         cardText={projectApproach}
-        sx={{ mb: "50px" }}
       />
+      <Divider sx={{ visibility: 'hidden', my: 2 }} />
       <ProjectTextCard
         cardTitle="Outcomes"
         cardText={projectApproachES}
