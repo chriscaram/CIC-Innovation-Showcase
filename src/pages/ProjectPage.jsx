@@ -29,8 +29,8 @@ const ProjectPage = () => {
         demo={demo}
       />
       <ProjectTextCard
-        projectName="Innovation"
-        projectInfo={projectApproach}
+        cardTitle="Innovation"
+        cardText={projectApproach}
       />
       <ProjectTextCard
         cardTitle="Outcomes"
