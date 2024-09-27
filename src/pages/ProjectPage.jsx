@@ -7,7 +7,7 @@ import backArrow from './images/backArrow.png';
 const ProjectPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { projectName, projectInfo, pic, demo } = location.state || {};
+  const { projectName, projectInfo, projectApproach, projectApproachES, pic, demo } = location.state || {};
 
   const handleBackClick = () => {
     navigate('/');
@@ -25,6 +25,16 @@ const ProjectPage = () => {
       <ProjectCard
         projectName={projectName}
         projectInfo={projectInfo}
+        demo={demo}
+      />
+      <ProjectCard
+        projectName="Innovation"
+        projectInfo={projectApproach}
+        demo={demo}
+      />
+      <ProjectCard
+        projectName="Outcomes"
+        projectInfo={projectApproachES}
         demo={demo}
       />
       <img
