@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import HomePageImage from './images/home-e.png';
 import { generateClient } from 'aws-amplify/api';
 import * as queries from '../graphql/queries';
@@ -81,6 +82,26 @@ const DemoSite = () => {
           width: "150px",
         }}
       />
+
+      <Typography variant="h5" align="left" color="white"  style={{
+         fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
+          position: 'absolute',
+          top: '170px',
+          left: '50px',
+          width: "450px",
+        }}>
+        Welcome to Innovation Nation!
+      </Typography>
+
+      <Typography variant="body3" align="left" color="white"  style={{
+         fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
+          position: 'absolute',
+          top: '240px',
+          left: '50px',
+          width: "280px",
+        }}>
+        Let’s explore a selection of prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world  Public Sector organization challenges, using AWS technical solutions.
+      </Typography>
 
       {info.map((project, index) => (
         <ProjectInfo
