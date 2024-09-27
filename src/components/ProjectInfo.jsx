@@ -12,7 +12,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, pic, demo }) => {
 
   const handleClick = () => {
     navigate(`/project`, {
-      state: { projectName, projectInfo, pic, demo }
+      state: { projectName, projectInfo, pic, projectApproach, projectApproachES, demo }
     });
   };
 
