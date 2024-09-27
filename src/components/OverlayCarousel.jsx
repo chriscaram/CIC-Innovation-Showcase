@@ -74,7 +74,7 @@ const OverlayCarousel = ({ info, onClose }) => {
           <span style={{ fontSize: "3rem", fontWeight: "bold" }}>
             EXPLORE
           </span>{" "}
-          <span style={{color: "#9479FF" , fontSize: "3rem", fontWeight: "bold" }}>GEN <br/> AI</span>{" "}
+          <span style={{color: "#3C640F" , fontSize: "3rem", fontWeight: "bold" }}>GEN <br/> AI</span>{" "}
           <span style={{ fontSize: "3rem", fontWeight: "bold" }}>
             PROJECTS
           </span>
