@@ -21,7 +21,7 @@ const ProjectCard = ({projectName, projectInfo, demo}) => {
       borderRadius={"15px"}
       width={"600px"}
       sx={{ backgroundColor: "rgb(60, 100, 15, 0.9)" }}
-      p={1}
+      p={2}
     >
       <Typography variant="h4" color={"white"} fontWeight={"bold"}>
        {projectName}
