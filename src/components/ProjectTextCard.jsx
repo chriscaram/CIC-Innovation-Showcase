@@ -19,7 +19,7 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
     <Box
       boxShadow={3}
       borderRadius={"15px"}
-      width={"400px"}
+      width={"500px"}
       sx={{ backgroundColor: "rgb(60, 100, 15, 0.9)" }}
       p={3}
     >
@@ -31,7 +31,7 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
           aria-controls="card-text-content"
           id="card-text-header"
         >
-          <Typography variant="h4" color={"white"} fontWeight={"bold"}>
+          <Typography variant="h5" color={"white"} fontWeight={"bold"}>
              {cardTitle}
           </Typography>
         </AccordionSummary>
