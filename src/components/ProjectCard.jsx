@@ -19,14 +19,14 @@ const ProjectCard = ({projectName, projectInfo, demo}) => {
     <Box
       boxShadow={3}
       borderRadius={"15px"}
-      width={"500px"}
+      width={"600px"}
       sx={{ backgroundColor: "rgb(60, 100, 15, 0.9)" }}
-      p={3}
+      p={1}
     >
       <Typography variant="h4" color={"white"} fontWeight={"bold"}>
        {projectName}
       </Typography>
-      <Typography variant="body2" color={"white"} mt={2}>
+      <Typography variant="body2" color={"white"} mt={1}>
         {projectInfo}
       </Typography>
       <PlayDemoButton onClick={handleOpen} />
