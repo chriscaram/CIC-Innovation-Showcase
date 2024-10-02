@@ -91,7 +91,7 @@ const DemoSite = () => {
           left: '50px',
           width: "550px",
         }}>
-        Welcome to Innovation Nation!
+        Welcome to \nInnovation Nation!
       </Typography>
 
       <Typography variant="h6" align="left" color="white"  style={{
