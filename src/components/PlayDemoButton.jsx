@@ -33,7 +33,7 @@ const AnimatedButton = styled(Button)(({ theme }) => ({
 
 const PlayDemoButton = ({ onClick }) => {
   return (
-    <AnimatedButton variant="contained" sx={{marginTop:"50px"}} onClick={onClick}>
+    <AnimatedButton variant="contained" sx={{marginTop:"30px"}} onClick={onClick}>
       <PlayArrowIcon className="icon" />
       <span className="text">Play Video</span>
     </AnimatedButton>
