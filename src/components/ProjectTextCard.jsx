@@ -19,13 +19,13 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
     <Box
       boxShadow={3}
       borderRadius={"15px"}
-      width={"500px"}
+      width={"600px"}
       sx={{ backgroundColor: "rgb(60, 100, 15, 0.9)" }}
-      p={3}
+      p={1}
     >
      
       
-       <Accordion sx={{ mt: 2, backgroundColor: "transparent", boxShadow: "none" }}>
+       <Accordion sx={{ mt: 1, backgroundColor: "transparent", boxShadow: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
           aria-controls="card-text-content"
