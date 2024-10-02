@@ -45,7 +45,7 @@ const ProjectPage = () => {
         onClick={handleBackClick} // Handle click event to navigate to home
         style={{
           position: 'absolute',
-          bottom: '10%', 
+          bottom: '7%', 
           left: '5%', 
           width: "40px",
           cursor: 'pointer', // Add pointer cursor to indicate it's clickable
