@@ -47,7 +47,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, projectApproach, projec
         src={Highlight}
         alt="Highlight"
         style={{
-          width: "60px",
+          width: "50px",
           opacity: isHovered ? 1 : 0,
           transition: "opacity 0.3s",
         }}
