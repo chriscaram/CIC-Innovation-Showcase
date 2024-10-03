@@ -46,7 +46,7 @@ const ProjectPage = () => {
         style={{
           position: 'absolute',
           bottom: '7%', 
-          left: '5%', 
+          left: '95%', 
           width: "40px",
           cursor: 'pointer', // Add pointer cursor to indicate it's clickable
         }}
