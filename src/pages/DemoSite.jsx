@@ -90,6 +90,7 @@ const DemoSite = () => {
           top: '170px',
           left: '50px',
           width: "550px",
+          whiteSpace: "pre-line",
         }}>
         Welcome to \nInnovation Nation!
       </Typography>
