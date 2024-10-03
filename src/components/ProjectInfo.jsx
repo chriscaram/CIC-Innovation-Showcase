@@ -39,7 +39,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, projectApproach, projec
         src={gem}
         alt="Sphere"
         style={{
-          width: "40px",
+          width: "25px",
           height: "auto",
         }}
       />
