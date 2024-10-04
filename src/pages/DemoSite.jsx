@@ -84,26 +84,25 @@ const DemoSite = () => {
       />
 
       <Typography variant="h4" align="left" style={{
-          color: 'rgba(245, 255, 255, 0.9)',
+          color: 'rgba(245, 255, 255, 0.95)',
           fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
           position: 'absolute',
           top: '170px',
           left: '50px',
           width: "550px",
-          whiteSpace: "pre-line",
         }}>
-        Welcome to \nInnovation Nation!
+        Welcome to <br /> Innovation Nation!
       </Typography>
 
       <Typography variant="h6" align="left" color="white"  style={{
-          color: 'rgba(240, 255, 255, 0.85)',
+          color: 'rgba(240, 255, 255, 0.9)',
           fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
           position: 'absolute',
           top: '240px',
           left: '50px',
           width: "350px",
         }}>
-        Let’s explore a selection of prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world  Public Sector organization challenges, using AWS technical solutions.
+        <br /> Let’s explore a selection of prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world  Public Sector organization challenges, using AWS technical solutions.
       </Typography>
 
       {info.map((project, index) => (
