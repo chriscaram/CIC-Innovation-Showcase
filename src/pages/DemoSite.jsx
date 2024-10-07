@@ -13,13 +13,13 @@ import OverlayCarousel from '../components/OverlayCarousel';
 const client = generateClient();
 
 const positions = [
-  { top: '20%', left: '40%' },
-  { top: '30%', left: '50%' },
-  { top: '40%', left: '70%' },
-  { top: '50%', left: '80%' },
+  { top: '40%', left: '30%' },
+  { top: '40%', left: '50%' },
+  { top: '-50%', left: '20%' },
+  { top: '20%', left: '-40%' },
   { top: '60%', left: '70%' },
-  { top: '70%', left: '60%' },
-  { top: '80%', left: '50%' },
+  { top: '40%', left: '10%' },
+  { top: '-20%', left: '50%' },
 ];
 
 const DemoSite = () => {
@@ -95,10 +95,10 @@ const DemoSite = () => {
           left: '50px',
           width: '550px',
           textShadow: `
-            -1px -1px 0 rgba(255, 255, 255, 1),
-            1px -1px 0 rgba(255, 255, 255, 1),
-            -1px 1px 0 rgba(255, 255, 255, 1),
-            1px 1px 0 rgba(255, 255, 255, 1)
+            -1px -1px 0 rgba(255, 255, 255, 0),
+            1px -1px 0 rgba(255, 255, 255, 0),
+            -1px 1px 0 rgba(255, 255, 255, 0),
+            1px 1px 0 rgba(255, 255, 255, 0)
           `,
         }}
       >
