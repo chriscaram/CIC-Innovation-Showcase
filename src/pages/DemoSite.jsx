@@ -13,13 +13,12 @@ import OverlayCarousel from '../components/OverlayCarousel';
 const client = generateClient();
 
 const positions = [
-  { top: '1%', left: '1%' },
-  { top: '20%', left: '20%' },
-  { top: '30%', left: '30%' },
-  { top: '40%', left: '40%' },
-  { top: '50%', left: '40%' },
-  { top: '60%', left: '60%' },
-  { top: '99%', left: '99%' },
+  { top: '50%', left: '25%' }, //*Optimizing Sedation
+  { top: '60%', left: '55%' }, //*Research Expertise Portal
+  { top: '65%', left: '30%' }, //*Combat Climate Change
+  { top: '40%', left: '45%' }, //*Noise Tracker
+  { top: '20%', left: '65%' }, //*Impact Evaluatior
+  { top: '45%', left: '60%' }, //*Autism
 ];
 
 const DemoSite = () => {
