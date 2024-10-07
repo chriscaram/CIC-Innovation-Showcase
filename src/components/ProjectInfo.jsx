@@ -39,7 +39,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, projectApproach, projec
         src={gem}
         alt="Sphere"
         style={{
-          width: "25px",
+          width: "15px",
           height: "auto",
         }}
       />
@@ -47,7 +47,7 @@ const ProjectInfo = ({ style , projectName, projectInfo, projectApproach, projec
         src={Highlight}
         alt="Highlight"
         style={{
-          width: "50px",
+          width: "30px",
           opacity: isHovered ? 1 : 0,
           transition: "opacity 0.3s",
         }}
