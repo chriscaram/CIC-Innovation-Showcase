@@ -117,10 +117,10 @@ const DemoSite = () => {
             left: '50px',
             width: '350px',
             textShadow: `
-              -1px -1px 0 gray,
-              1px -1px 0 gray,
-              -1px 1px 0 gray,
-              1px 1px 0 gray
+              -1px -1px 0 rgba(60, 100, 15, 0.7),
+              1px -1px 0 rgba(60, 100, 15, 0.7),
+              -1px 1px 0 rgba(60, 100, 15, 0.7),
+              1px 1px 0 rgba(60, 100, 15, 0.7)
             `,
           }}
         >
