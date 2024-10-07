@@ -13,13 +13,13 @@ import OverlayCarousel from '../components/OverlayCarousel';
 const client = generateClient();
 
 const positions = [
-  { top: '43%', left: '28%' },
-  { top: '47%', left: '75%' },
-  { top: '35%', left: '62%' },
-  { top: '46%', left: '57%' },
-  { top: '37%', left: '18%' },
-  { top: '45%', left: '34%' },
-  { top: '52%', left: '73%' },
+  { top: '20%', left: '40%' },
+  { top: '30%', left: '50%' },
+  { top: '40%', left: '70%' },
+  { top: '50%', left: '80%' },
+  { top: '60%', left: '70%' },
+  { top: '70%', left: '60%' },
+  { top: '80%', left: '50%' },
 ];
 
 const DemoSite = () => {
@@ -83,14 +83,25 @@ const DemoSite = () => {
         }}
       />
 
-      <Typography variant="h5" align="left" style={{
+      <Typography
+        variant="h4"
+        align="left"
+        style={{
           color: 'rgba(245, 255, 255, 0.95)',
-          fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
+          fontWeight: 'bold',
+          fontFamily: '"Helvetica Neue"',
           position: 'absolute',
           top: '170px',
           left: '50px',
-          width: "550px",
-        }}>
+          width: '550px',
+          textShadow: `
+            -1px -1px 0 rgba(255, 255, 255, 1),
+            1px -1px 0 rgba(255, 255, 255, 1),
+            -1px 1px 0 rgba(255, 255, 255, 1),
+            1px 1px 0 rgba(255, 255, 255, 1)
+          `,
+        }}
+      >
         Welcome to <br /> Innovation Nation!
       </Typography>
 
