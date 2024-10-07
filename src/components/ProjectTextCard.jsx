@@ -31,7 +31,7 @@ const ProjectTextCard = ({cardTitle, cardText}) => {
           aria-controls="card-text-content"
           id="card-text-header"
         >
-          <Typography variant="h5" color={"white"} fontWeight={"bold"}>
+          <Typography variant="subtitle1" color={"white"} fontWeight={"bold"}>
              {cardTitle}
           </Typography>
         </AccordionSummary>
