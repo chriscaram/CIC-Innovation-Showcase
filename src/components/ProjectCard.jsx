@@ -23,7 +23,7 @@ const ProjectCard = ({projectName, projectInfo, demo}) => {
       sx={{ backgroundColor: "rgb(60, 100, 15, 0.9)" }}
       p={2}
     >
-      <Typography variant="h4" color={"white"} fontWeight={"bold"}>
+      <Typography variant="h5" color={"white"} fontWeight={"bold"}>
        {projectName}
       </Typography>
       <Typography variant="body2" color={"white"} mt={1}>
