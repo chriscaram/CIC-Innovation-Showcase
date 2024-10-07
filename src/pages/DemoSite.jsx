@@ -94,16 +94,30 @@ const DemoSite = () => {
         Welcome to <br /> Innovation Nation!
       </Typography>
 
-      <Typography variant="subtitle1" align="left" color="white"  style={{
-          color: 'rgba(240, 255, 255, 0.9)',
-          fontWeight: 'bold', fontFamily: '"Helvetica Neue"',
-          position: 'absolute',
-          top: '240px',
-          left: '50px',
-          width: "350px",
-        }}>
-        <br /> Explore a selection of technical prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world, mission-focused challenges, using AWS technical solutions.
-      </Typography>
+      <Typography
+          variant="subtitle1"
+          align="left"
+          color="white"
+          style={{
+            color: 'rgba(240, 255, 255, 0.9)',
+            fontWeight: 'bold',
+            fontFamily: '"Helvetica Neue"',
+            position: 'absolute',
+            top: '240px',
+            left: '50px',
+            width: '350px',
+            textShadow: `
+              -1px -1px 0 gray,
+              1px -1px 0 gray,
+              -1px 1px 0 gray,
+              1px 1px 0 gray
+            `,
+          }}
+        >
+          <br />
+          Explore a selection of technical prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world, mission-focused challenges, using AWS technical solutions.
+        </Typography>
+
 
       {info.map((project, index) => (
         <ProjectInfo
