@@ -83,7 +83,7 @@ const DemoSite = () => {
       />
 
       <Typography
-        variant="h4"
+        variant="h3"
         align="left"
         style={{
           color: 'rgba(245, 255, 255, 0.95)',
