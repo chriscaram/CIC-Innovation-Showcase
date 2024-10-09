@@ -103,7 +103,7 @@ const DemoSite = () => {
       >
         Welcome to <br /> Innovation Nation!
       </Typography>
-
+{/*
       <Typography
           variant="subtitle1"
           align="left"
@@ -127,7 +127,7 @@ const DemoSite = () => {
           <br />
           Explore a selection of technical prototypes, developed by the UBC Cloud Innovation Centre (CIC), that solve real-world, mission-focused challenges, using AWS technical solutions.
         </Typography>
-
+*/}
 
       {info.map((project, index) => (
         <ProjectInfo
