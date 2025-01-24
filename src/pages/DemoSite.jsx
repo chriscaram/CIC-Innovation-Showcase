@@ -13,7 +13,7 @@ import OverlayCarousel from '../components/OverlayCarousel';
 const client = generateClient();
 
 const positions = [
-  { top: '50%', left: '25%' }, //*Optimizing Sedation
+  { top: '50%', left: '28%' }, //*Optimizing Sedation
   { top: '60%', left: '55%' }, //*Research Expertise Portal
   { top: '65%', left: '30%' }, //*Combat Climate Change
   { top: '40%', left: '45%' }, //*Noise Tracker
